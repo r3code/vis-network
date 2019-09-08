@@ -91,15 +91,15 @@
 <div style="width: 800px; font-size:14px; text-align: justify;">
   This example is the same as example 2, except for the navigation controls that have been activated. The navigation controls are described below. <br /><br />
   <table class="legend_table">
-    <tr>
+    <tr style="color: blue">
       <th>Icons: </th>
-      <td><img src="../../../dist/img/network/upArrow.png" />     </td>
-      <td><img src="../../../dist/img/network/downArrow.png" />   </td>
-      <td><img src="../../../dist/img/network/leftArrow.png" />   </td>
-      <td><img src="../../../dist/img/network/rightArrow.png" />  </td>
-      <td><img src="../../../dist/img/network/plus.png" />        </td>
-      <td><img src="../../../dist/img/network/minus.png" />       </td>
-      <td><img src="../../../dist/img/network/zoomExtends.png" /> </td>
+      <td><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="arcs"><circle cx="12" cy="12" r="10"/><path d="M16 12l-4-4-4 4M12 16V9"/></svg></td>
+      <td><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="arcs"> <circle cx="12" cy="12" r="10"/><path d="M16 12l-4 4-4-4M12 8v7"/></svg></td>
+      <td><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="arcs"><circle cx="12" cy="12" r="10"/><path d="M12 8l-4 4 4 4M16 12H9"/></svg></td>
+      <td><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="arcs"><circle cx="12" cy="12" r="10"/><path d="M12 8l4 4-4 4M8 12h7"/></svg></td>
+      <td><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="arcs"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="16"></line><line x1="8" y1="12" x2="16" y2="12"></line></svg></td>
+      <td><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="arcs"><circle cx="12" cy="12" r="10"></circle><line x1="8" y1="12" x2="16" y2="12"></line></svg></td>
+      <td><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="arcs"><path d="M7.027 7.027l9.946 9.946m0-9.946l-9.946 9.946m6.792-10.43h3.64v3.64m-7.278-3.64h-3.64v3.64m7.278 7.278h3.64v-3.64m-7.278 3.64h-3.64v-3.64" stroke-width="1.6"/><circle cx="12.102" cy="12.102" r="10"/></svg></td>
     </tr>
     <tr>
       <th>Keyboard shortcuts:</th>
@@ -125,7 +125,7 @@
   <br />
   Apart from clicking the icons, you can also navigate using the keyboard. The buttons are in table above.
   Zoom Extends changes the zoom and position of the camera to encompass all visible nodes. <u>To correctly display the navigation icons, <b>vis.css</b> or <b>vis-network.min.css</b> must be included.</u>
-    The user is free to alter or overload the CSS classes but without them the navigation icons are not visible.
+    The user is free to alter or overload the CSS classes but without them the navigation icons are not visible. To change the icon fill color set the <i>css color attribute</i> for the parent block (the icon color taken from CSS currentColor).
 </div>
 
 <div id="mynetwork"></div>
